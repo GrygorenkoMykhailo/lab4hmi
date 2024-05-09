@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a{
+    color:white;
+}
+
 a:hover{
     color:white;
 }
@@ -22,7 +26,7 @@ header{
     background-color: black;
     align-items: center;
     max-width: 1700px;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 header nav{
@@ -32,43 +36,38 @@ header nav{
 }
 
 header nav a{
-    color: white;
     font-size: 36px;
 }
 
 .container{
-    display: flex;
     width: 90%;
     max-width: 1700px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
 
-.container .left{
-    width: 70%;
-}
-
-.container .left li a{
+.card{
+    background-color: black;
+    border: 1px solid white;
+    flex-basis: 33.3%;
+    padding: 1.5em;
+    margin: 0 .3em 0 .3em;
     color:white;
 }
 
-.list-item{
-    margin-bottom: 1em;
+.card-body{
+    padding: .6em 0 0 0;
 }
 
-.container .left .row .col ul{
-    list-style-type: none;
+.card h4{
+    margin: 1em 0 1em 0;
     font-size: 36px;
-    color:white;
 }
 
-.right h3{
-    font-size: 64px;
-    color:white;
-    margin-bottom: .4em;
-}
-
-.right{
-    color:white;
-    font-size: 24px;
+.card p{
+    font-size: 36px;
 }
 
 @media(max-width: 1200px){
@@ -81,16 +80,12 @@ header nav a{
         font-size: 24px;
     }
 
-    .container .left{
-        width: 170%;
-        padding-right: 2em;
+    .container div{
+        display: flex;
+        flex-direction: column;
     }
 
-    .container .left li a{
-        font-size: 24px;
-    }
-
-    .container .right{
-        font-size: 24px;
+    .card{
+        margin: 1em 0 1em 0;
     }
 }

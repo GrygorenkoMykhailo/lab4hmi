@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a:hover{
+    color:white;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -59,4 +63,44 @@ header nav a{
 
 .container .right{
     width: 50%;
+}
+
+@media(max-width: 1200px){
+    body{
+        background-image: none;
+        background-color: black;
+    }
+
+    header nav{
+        width: 70%;
+    }
+
+    header nav a{
+        font-size: 24px;
+    }
+
+    .container{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .container .left h1{
+        font-size: 36px;
+    }
+
+    .container .left p{
+        text-align: justify;
+        font-size: 24px;
+    }
 }
