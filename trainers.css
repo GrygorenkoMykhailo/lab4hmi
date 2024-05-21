@@ -89,3 +89,26 @@ header nav a{
         margin: 1em 0 1em 0;
     }
 }
+
+@media (max-width: 576px) {
+    .container .left h1{
+        font-size: 20px;
+    }
+
+    header nav a{
+        font-size: 16px;
+    }
+
+    .container .left p{
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .card p{
+        font-size: 16px;
+    }
+
+    .card h4{
+        font-size: 16px;
+    }
+}

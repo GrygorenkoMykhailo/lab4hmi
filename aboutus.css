@@ -94,3 +94,34 @@ header nav a{
         font-size: 24px;
     }
 }
+
+@media (max-width: 576px) {
+    .container .left h1{
+        font-size: 20px;
+    }
+
+    header nav a{
+        font-size: 16px;
+    }
+
+    .container .left p{
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .container .left li a{
+        font-size: 16px;
+    }
+
+    .container .right{
+        font-size: 16px;
+    }
+
+    header{
+        margin-bottom: 1em;
+    }
+
+    .right h3{
+        font-size: 32px;
+    }
+}
